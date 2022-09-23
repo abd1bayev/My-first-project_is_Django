@@ -1,6 +1,6 @@
  <!DOCTYPE html>
  {% load static  %}
-<html lang="ru">
+<html lang="uz">
 <head>
     <!-- //Meta tag Keywords -->
     <title>Clack Website Template</title>
@@ -32,25 +32,25 @@
                     <!-- nav -->
                     <nav class="py-4">
                         <div id="logo">
-                            <h1> <a href="index.html" class="editContent" style="outline: none; outline-offset: -2px; cursor: inherit; color: rgb(255, 255, 255); font-size: 40px; background-color: rgba(0, 0, 0, 0); font-family: &quot;Source Sans Pro&quot;, sans-serif;">DjangoMovie</a></h1>
+                            <h1> <a href="index.html" class="editContent" style="outline: none; outline-offset: -2px; cursor: inherit; color: rgb(255, 255, 255); font-size: 40px; background-color: rgba(0, 0, 0, 0); font-family: &quot;Source Sans Pro&quot;, sans-serif;"></a></h1>
                         </div>
 
                         <label for="drop" class="toggle">Menu</label>
                         <input type="checkbox" id="drop">
                         <ul class="menu mt-2">
-                            <li class="active"><a href="index.html">Главная</a></li>
+                            <li class="active"><a href="index.html">Asosiy</a></li>
                             <li>
                                 <!-- First Tier Drop Down -->
-                                <label for="drop-2" class="toggle">Категории <span class="fa fa-angle-down" aria-hidden="true" ></span> </label>
-                                <a href="#">Категории <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <label for="drop-2" class="toggle">Kategoriyalar <span class="fa fa-angle-down" aria-hidden="true" ></span> </label>
+                                <a href="#">Kategoriyalar <span class="fa fa-angle-down" aria-hidden="true"></span></a>
                                 <input type="checkbox" id="drop-2">
                                 <ul>
-                                    <li><a href="moviesingle.html">Фильмы</a></li>
-                                    <li><a href="moviesingle.html">Сериалы</a></li>
-                                    <li><a href="moviesingle.html">Мультфильмы</a></li>
+                                    <li><a href="movie_detail.html">Filmlar</a></li>
+                                    <li><a href="movie_detail.html">Seriallar</a></li>
+                                    <li><a href="movie_detail.html">Multfilmlar</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: uppercase;">Вход</a></li>
+                            <li><a href="contact.html" style="color: rgb(255, 255, 255); font-weight: 700; text-transform: uppercase;">Kirish</a></li>
                         </ul>
                     </nav>
                     <!-- //nav -->
@@ -59,8 +59,8 @@
             <!-- //header -->
             <!--/banner-->
             <div class="banner-info">
-                <p class="editContent" >лучший сайт на django 3</p>
-                <h3 class="mb-4 editContent">Все о кино</h3>
+<!--                <p class="editContent" >лучший сайт на django 3</p>-->
+<!--                <h3 class="mb-4 editContent">Все о кино</h3>-->
                 <div class="ban-buttons">
 
 
@@ -73,9 +73,9 @@
         <!---->
         <ol class="breadcrumb editContent">
             <li class="breadcrumb-item">
-                <a href="index.html" class="editContent">Home</a>
+                <a href="index.html" class="editContent">Uy</a>
             </li>
-            <li class="breadcrumb-item active editContent">Single Page</li>
+            <li class="breadcrumb-item active editContent">Yagona Sahifa</li>
         </ol>
         <!---->
         <!-- banner -->
@@ -85,38 +85,38 @@
                     <div class="side-bar col-lg-3">
 
                         <div class="search-bar w3layouts-newsletter">
-                            <h3 class="sear-head editContent" >Поиск фильма</h3>
+                            <h3 class="sear-head editContent" >Kino qidirish</h3>
                             <form action="#" method="post" class="d-flex editContent" >
-                                <input type="search" placeholder="Введите название..." name="search" class="form-control" required="">
+                                <input type="search" placeholder="Sarlavhani kiriting..." name="search" class="form-control" required="">
                                 <button class="btn1 btn" ><span class="fa fa-search" aria-hidden="true" ></span></button>
                             </form>
                         </div>
                         <!--preference -->
                         <div class="left-side my-4">
-                            <h3 class="sear-head editContent" >Жанры</h3>
+                            <h3 class="sear-head editContent" >Janrlar</h3>
                             <ul class="w3layouts-box-list">
                                 <li class="editContent" >
                                     <input type="checkbox" class="checked">
-                                    <span class="span editContent" >Аниме</span>
+                                    <span class="span editContent" >Anime</span>
                                 </li>
                                     <li class="editContent" >
                                     <input type="checkbox" class="checked">
-                                    <span class="span editContent" >Боевики</span>
+                                    <span class="span editContent" >Jangarilar</span>
                                 </li>
                                 <li class="editContent" >
                                     <input type="checkbox" class="checked">
-                                    <span class="span editContent" >Комедии</span>
+                                    <span class="span editContent" >Komediya</span>
                                 </li>
                                 <li class="editContent" >
                                     <input type="checkbox" class="checked">
-                                    <span class="span editContent" >Ужасы</span>
+                                    <span class="span editContent" >Dahshatli</span>
                                 </li>
                             </ul>
                         </div>
                         <!-- // preference -->
                         <!-- discounts -->
                         <div class="left-side">
-                            <h3 class="sear-head editContent" >Год</h3>
+                            <h3 class="sear-head editContent" >Yil</h3>
                             <ul class="w3layouts-box-list">
                                 <li class="editContent" >
                                     <input type="checkbox" class="checked">
@@ -147,7 +147,7 @@
                         <!-- //discounts -->
                         <!-- reviews -->
                         <div class="customer-rev left-side my-4">
-                            <h3 class="sear-head editContent" >Рейтинг</h3>
+                            <h3 class="sear-head editContent" >Reyting</h3>
                             <ul class="w3layouts-box-list">
                                 <li>
                                     <a href="#">
@@ -204,14 +204,14 @@
                         <!-- //reviews -->
                         <!-- deals -->
                         <div class="deal-leftmk left-side">
-                            <h3 class="sear-head editContent">Последние добавленные</h3>
+                            <h3 class="sear-head editContent">Oxirgi qo'shilgan</h3>
                             <div class="special-sec1 row mt-3 editContent">
                                 <div class="img-deals col-md-4">
                                     <img src="bundles/images/s4.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="img-deal1 col-md-4">
-                                    <h3 class="editContent">Рэмбо: Последняя кровь</h3>
-                                    <a href="moviesingle.html" class="editContent" ></a>
+                                    <h3 class="editContent">Rembo: Oxirgi qon</h3>
+                                    <a href="movie_detail.html" class="editContent" ></a>
                                 </div>
 
                             </div>
@@ -221,7 +221,7 @@
                                 </div>
                                 <div class="img-deal1 col-md-8">
                                     <h3 class="editContent" >Холодное сердце 2</h3>
-                                    <a href="moviesingle.html" class="editContent" ></a>
+                                    <a href="movie_detail.html" class="editContent" ></a>
                                 </div>
 
                             </div>
@@ -231,7 +231,7 @@
                                 </div>
                                 <div class="img-deal1 col-md-8">
                                     <h3 class="editContent" >К звездам</h3>
-                                    <a href="moviesingle.html" class="editContent" ></a>
+                                    <a href="movie_detail.html" class="editContent" ></a>
                                 </div>
 
                             </div>
@@ -241,7 +241,7 @@
                                 </div>
                                 <div class="img-deal1 col-md-8">
                                     <h3 class="editContent" >Терминатор: Темные судьбы</h3>
-                                    <a href="moviesingle.html" class="editContent" ></a>
+                                    <a href="movie_detail.html" class="editContent" ></a>
                                 </div>
 
                             </div>
@@ -251,7 +251,7 @@
                                 </div>
                                 <div class="img-deal1 col-md-8">
                                     <h3 class="editContent" >Джокер</h3>
-                                    <a href="moviesingle.html" class="editContent" ></a>
+                                    <a href="movie_detail.html" class="editContent" ></a>
                                 </div>
 
                             </div>
@@ -271,7 +271,7 @@
                                     </div>
                                     <div class="item-info-product">
                                         <h4 class="">
-                                            <a href="moviesingle.html" class="editContent" >
+                                            <a href="{{movie.get_absolute_url}}" class="editContent" >
                                                 {{ movie.title }}
                                             </a>
                                         </h4>
@@ -295,7 +295,7 @@
                         </div>
                         <!--<div class="grid-img-right mt-4 text-right bg bg1" >
                             <span class="money editContent" >Flat 50% Off</span>
-                            <a href="moviesingle.html" class="btn" >Now</a>
+                            <a href="movie_detail.html" class="btn" >Now</a>
                         </div>-->
                     </div>
                 </div>

@@ -33,30 +33,30 @@
                 <nav class="py-4">
                     <div id="logo">
                         <h1><a href="index.html" class="editContent"
-                               style="outline: none; outline-offset: -2px; cursor: inherit; color: rgb(255, 255, 255); font-size: 40px; background-color: rgba(0, 0, 0, 0); font-family: &quot;Source Sans Pro&quot;, sans-serif;">DjangoMovie</a>
+                               style="outline: none; outline-offset: -2px; cursor: inherit; color: rgb(255, 255, 255); font-size: 40px; background-color: rgba(0, 0, 0, 0); font-family: &quot;Source Sans Pro&quot;, sans-serif;">Company</a>
                         </h1>
                     </div>
 
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop">
                     <ul class="menu mt-2">
-                        <li class="active"><a href="index.html">Главная</a></li>
+                        <li class="active"><a href="index.html">Bosh saxifa</a></li>
                         <li>
                             <!-- First Tier Drop Down -->
-                            <label for="drop-2" class="toggle">Категории <span
+                            <label for="drop-2" class="toggle">Toifalar <span
                                     class="fa fa-angle-down" aria-hidden="true"
                                     style="outline: none; cursor: inherit;"></span> </label>
-                            <a href="#">Категории <span class="fa fa-angle-down"
+                            <a href="#">Toifalar <span class="fa fa-angle-down"
                                                         aria-hidden="true"></span></a>
                             <input type="checkbox" id="drop-2">
                             <ul>
-                                <li><a href="movie_detail.html">Фильмы</a></li>
-                                <li><a href="movie_detail.html">Сериалы</a></li>
-                                <li><a href="movie_detail.html">Мультфильмы</a></li>
+                                <li><a href="movie_detail.html">Kinolar</a></li>
+                                <li><a href="movie_detail.html">Seriallar</a></li>
+                                <li><a href="movie_detail.html">Multfilmlar</a></li>
                             </ul>
                         </li>
                         <li><a href="contact.html"
-                               style="color: rgb(255, 255, 255); font-weight: 700; text-transform: uppercase;">Вход</a>
+                               style="color: rgb(255, 255, 255); font-weight: 700; text-transform: uppercase;">Kirish</a>
                         </li>
                     </ul>
                 </nav>
@@ -69,10 +69,10 @@
     <ol class="breadcrumb editContent">
         <li class="breadcrumb-item">
             <a href="index.html" class="editContent"
-               style="outline: none; cursor: inherit;">Home</a>
+               style="outline: none; cursor: inherit;">Bosh saxifa</a>
         </li>
         <li class="breadcrumb-item active editContent" style="outline: none; cursor: inherit;">
-            Single
+            Asosiy
         </li>
     </ol>
     <!---->
@@ -90,7 +90,7 @@
                             Поиск фильма</h3>
                         <form action="#" method="post" class="d-flex editContent"
                               style="outline: none; cursor: inherit;">
-                            <input type="search" placeholder="Введите название..." name="search"
+                            <input type="search" placeholder="Sarlavxani kiriting..." name="search"
                                    class="form-control" required="">
                             <button class="btn1 btn" style="outline: none; cursor: inherit;"><span
                                     class="fa fa-search" aria-hidden="true"
@@ -105,22 +105,22 @@
                             <li class="editContent" style="outline: none; cursor: inherit;">
                                 <input type="checkbox" class="checked">
                                 <span class="span editContent"
-                                      style="outline: none; cursor: inherit;">Аниме</span>
+                                      style="outline: none; cursor: inherit;">Anime</span>
                             </li>
                             <li class="editContent" style="outline: none; cursor: inherit;">
                                 <input type="checkbox" class="checked">
                                 <span class="span editContent"
-                                      style="outline: none; cursor: inherit;">Боевики</span>
+                                      style="outline: none; cursor: inherit;">Jangari</span>
                             </li>
                             <li class="editContent" style="outline: none; cursor: inherit;">
                                 <input type="checkbox" class="checked">
                                 <span class="span editContent"
-                                      style="outline: none; cursor: inherit;">Комедии</span>
+                                      style="outline: none; cursor: inherit;">Komediya</span>
                             </li>
                             <li class="editContent" style="outline: none; cursor: inherit;">
                                 <input type="checkbox" class="checked">
                                 <span class="span editContent"
-                                      style="outline: none; cursor: inherit;">Ужасы</span>
+                                      style="outline: none; cursor: inherit;">Qo'rqinchli</span>
                             </li>
                         </ul>
                     </div>
@@ -252,7 +252,7 @@
                     <!-- deals -->
                     <div class="deal-leftmk left-side">
                         <h3 class="sear-head editContent">
-                            Последние добавленные</h3>
+                            Son'nggi qo'shilgan</h3>
                         <div class="special-sec1 row mt-3 editContent">
                             <div class="img-deals col-md-4">
                                 <img src="bundles/images/s4.jpg" class="img-fluid" alt="">
@@ -338,38 +338,38 @@
                             </h3>
                             <h5 class="editContent"></h5>
                             <ul>
-                                <li style="list-style: none"><span><b>Год:</b> {{movie.year}}</span></li>
-                                <li style="list-style: none"><span><b>Страна:</b> {{movie.country}}</span>
+                                <li style="list-style: none"><span><b>Yili: </b> {{movie.year}}</span></li>
+                                <li style="list-style: none"><span><b>Davlati: </b> {{movie.country}}</span>
                                 </li>
-                                <li style="list-style: none"><span><b>Слоган:</b> {{movie.tagline}}</span>
+                                <li style="list-style: none"><span><b>Tavfsifi: </b> {{movie.tagline}}</span>
                                 </li>
                                 <li style="list-style: none">
-                                    <span><b>Режиссер:</b>
+                                    <span><b>Rejissyorlar: </b>
                                      {% for director in movie.derectors.all %}
                                         {{director.name}}
                                      {% endfor %}
                                     </span></li>
-                                <li style="list-style: none"><span><b>Актеры:</b>
+                                <li style="list-style: none"><span><b>Aktyorlar: </b>
                                 {% for actor in movie.actors.all %}
                                         {{actor.name}}
                                     {% endfor %}
                                 </span></li>
-                                <li style="list-style: none"><span><b>Жанр:</b>
+                                <li style="list-style: none"><span><b>Janri: </b>
                                 {% for genre in movie.genres.all %}
                                         {{genre.name}}
                                     {% endfor %}
                                 </span>
                                 </li>
-                                <li style="list-style: none"><span><b>Премьера в мире:</b>{{movie.world_premiere}}</span>
+                                <li style="list-style: none"><span><b>Premyera sanasi: </b>{{movie.world_premiere}}</span>
                                 </li>
                                 <li style="list-style: none">
-                                    <span><b>Бюджет:</b>${{movie.budget}}</span></li>
+                                    <span><b>Byudjet: </b>${{movie.budget}}</span></li>
                                 <li style="list-style: none">
-                                    <span><b>Сборы в США:</b>${{movie.fees_in_usa}}</span></li>
-                                <li style="list-style: none"><span><b>Сборы в мире:</b>${{movie.fees_in_world}}</span>
+                                    <span><b>Aqshdagi xarajatlar: </b>${{movie.fees_in_usa}}</span></li>
+                                <li style="list-style: none"><span><b>Dunyodagi xarajatlar: </b>${{movie.fees_in_world}}</span>
                                 </li>
                                 <li style="list-style: none">
-                                    <a href="#"><b>Рейтинг:</b>
+                                    <a href="#"><b>Reyting:</b>
                                     <span class="fa fa-star" aria-hidden="true"
                                           style="outline: none; cursor: inherit;"></span>
                                         <span class="fa fa-star" aria-hidden="true"
@@ -388,7 +388,7 @@
                                     <div class="share">
                                         <h4 class="editContent"
                                             style="outline: none; cursor: inherit;">
-                                            Share:</h4>
+                                            Ulashing: </h4>
                                         <ul class="w3layouts_social_list list-unstyled">
                                             <li>
                                                 <a href="#" class="w3pvt_facebook editContent"
@@ -420,7 +420,7 @@
                     <div class="row sub-para-w3layouts mt-5">
 
                         <h3 class="shop-sing editContent" style="outline: none; cursor: inherit;">
-                            О фильме {{movie.title}}
+                            Film haqida {{movie.title}}
                         </h3>
                         <p>
                             <img src="bundles/images/about.jpg" class="img-fluid" alt="">
@@ -435,8 +435,7 @@
                             <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/A36LahZNUiE?controls=0"
                                     frameborder="0" allow="accelerometer; autoplay;
-                                                                           encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
+                                                                           encrypted-media; gyroscope; picture-in-picture"  allowfullscreen>
 
                             </iframe>
                         </p>
@@ -448,12 +447,12 @@
                             <div class="contact-single">
                                 <h3 class="editContent" style="outline: none; cursor: inherit;">
                                     <span class="sub-tittle editContent"
-                                          style="outline: none; cursor: inherit;">02</span>Оставить отзыв</h3>
+                                          style="outline: none; cursor: inherit;">02</span>Fikr qoldiring</h3>
                                 <form action="#" method="get" class="mt-4">
                                     <div class="form-group editContent"
                                          style="outline: none; cursor: inherit;">
                                         <label for="contactcomment" class="editContent"
-                                               style="outline: none; cursor: inherit;">Ваш комментарий
+                                               style="outline: none; cursor: inherit;">Sizning Fikringiz
                                             *</label>
                                         <textarea class="form-control border" rows="5"
                                                   id="contactcomment" required=""></textarea>
@@ -462,7 +461,7 @@
                                         <div class="col-sm-6 form-group p-0 editContent"
                                              style="outline: none; cursor: inherit;">
                                             <label for="contactusername" class="editContent"
-                                                   style="outline: none; cursor: inherit;">Имя
+                                                   style="outline: none; cursor: inherit;">Ism
                                                 *</label>
                                             <input type="text" class="form-control border"
                                                    id="contactusername" required="">
@@ -478,14 +477,14 @@
                                     </div>
                                     <button type="submit"
                                             class="mt-3 btn btn-success btn-block py-3"
-                                            style="outline: none; cursor: inherit;">Отправить
+                                            style="outline: none; cursor: inherit;">Jo'natish
                                     </button>
                                 </form>
                             </div>
                             <!--  //contact form grid ends here -->
                         </div>
                         <div class="media py-5">
-                            <img src="bundles/images/te2.jpg" class="mr-3 img-fluid" alt="image"
+                            <img src="../../static//images/te2.jpg" class="mr-3 img-fluid" alt="image"
                                  style="outline: none; cursor: inherit;">
                             <div class="media-body mt-4">
                                 <h5 class="mt-0 editContent"
@@ -498,7 +497,7 @@
                                 <div class="media mt-5 editContent"
                                      style="outline: none; cursor: inherit;">
                                     <a class="pr-3" href="#">
-                                        <img src="bundles/images/te1.jpg" class="img-fluid "
+                                        <img src="../../static/images/te1.jpg" class="img-fluid "
                                              alt="image" style="outline: none; cursor: inherit;">
                                     </a>
                                     <div class="media-body">
@@ -525,21 +524,21 @@
         <div class="container">
             <div class="row footer-top">
                 <div class="col-lg-4 footer-grid_section_w3layouts">
-                    <h2 class="logo-2 mb-lg-4 mb-3">
-                        <a href="index.html" class="editContent">
-                                <span class="fa" aria-hidden="true"
-                                      style="outline: none; cursor: inherit;">
-                                    Django School
-                                </span>
-                        </a>
-                    </h2>
-                    <p class="editContent" style="outline: none; cursor: inherit;">
-                        Канал для программистов и людей, которые хотят развиваться в сфере IT.
-                        Видео уроки по python 3, Django 2, Django 3, JavaScript, Vue.js, HTML, CSS
-                        и многое другое.
-                    </p>
+<!--                    <h2 class="logo-2 mb-lg-4 mb-3">-->
+<!--                        <a href="index.html" class="editContent">-->
+<!--                                <span class="fa" aria-hidden="true"-->
+<!--                                      style="outline: none; cursor: inherit;">-->
+<!--                                    Django School-->
+<!--                                </span>-->
+<!--                        </a>-->
+<!--                    </h2>-->
+<!--                    <p class="editContent" style="outline: none; cursor: inherit;">-->
+<!--                        Канал для программистов и людей, которые хотят развиваться в сфере IT.-->
+<!--                        Видео уроки по python 3, Django 2, Django 3, JavaScript, Vue.js, HTML, CSS-->
+<!--                        и многое другое.-->
+<!--                    </p>-->
                     <h4 class="sub-con-fo ad-info my-4 editContent"
-                        style="outline: none; cursor: inherit;">Catch on Social</h4>
+                        style="outline: none; cursor: inherit;">Ijtimoiy tarmoqlar</h4>
                     <ul class="w3layouts_social_list media-soc list-unstyled">
                         <li>
                             <a href="#" class="w3pvt_facebook editContent"
@@ -574,14 +573,12 @@
                 <div class="col-lg-8 footer-right">
                     <div class="w3layouts-news-letter">
                         <h3 class="footer-title text-uppercase editContent mb-lg-4 mb-3"
-                            style="outline: none; cursor: inherit;">Newsletter</h3>
+                            style="outline: none; cursor: inherit;">Yangiliklar</h3>
 
-                        <p class="editContent" style="outline: none; cursor: inherit;">By
-                            subscribing to our mailing list you will always get latest news and
-                            updates from us.</p>
+                        <p class="editContent" style="outline: none; cursor: inherit;">Bizning pochtamizga obuna bo'lish orqali siz doimo bizdan so'nggi yangiliklarni olasiz.</p>
                         <form action="#" method="post" class="w3layouts-newsletter">
                             <input type="email" name="Email" class="editContent"
-                                   placeholder="Enter your email..." required=""
+                                   placeholder="Emailni kiriting..." required=""
                                    style="outline: none; cursor: inherit;">
                             <button class="btn1 btn" style="outline: none; cursor: inherit;"><span
                                     class="fa fa-paper-plane-o" aria-hidden="true"
@@ -592,19 +589,19 @@
                     <div class="row mt-lg-4 bottom-w3layouts-sec-nav mx-0">
                         <div class="col-md-4 footer-grid_section_w3layouts">
                             <h3 class="footer-title text-uppercase editContent mb-lg-4 mb-3"
-                                style="outline: none; cursor: inherit;">Разделы</h3>
+                                style="outline: none; cursor: inherit;">Bo'limlar</h3>
                             <ul class="list-unstyled w3layouts-icons">
                                 <li>
                                     <a href="index.html" class="editContent"
-                                       style="outline: none; cursor: inherit;">Главная</a>
+                                       style="outline: none; cursor: inherit;">Bosh sahifa</a>
                                 </li>
                                 <li>
                                     <a href="about.html" class="editContent"
-                                       style="outline: none; cursor: inherit;">Категории</a>
+                                       style="outline: none; cursor: inherit;">Toifalar</a>
                                 </li>
                                 <li>
                                     <a href="contact.html" class="editContent"
-                                       style="outline: none; cursor: inherit;">Контакты</a>
+                                       style="outline: none; cursor: inherit;">Bog'lanish</a>
                                 </li>
                             </ul>
                         </div>
@@ -612,12 +609,12 @@
                             <!-- social icons -->
                             <div class="agileinfo_social_icons">
                                 <h3 class="footer-title text-uppercase editContent mb-lg-4 mb-3"
-                                    style="outline: none; cursor: inherit;">Pages</h3>
+                                    style="outline: none; cursor: inherit;">Saxifalar</h3>
                                 <ul class="list-unstyled w3layouts-icons">
 
                                     <li>
                                         <a href="#" class="editContent"
-                                           style="outline: none; cursor: inherit;">About Us</a>
+                                           style="outline: none; cursor: inherit;">Biz haqimizda</a>
                                     </li>
                                     <li>
                                         <a href="#" class="editContent"
@@ -641,7 +638,7 @@
                         </div>
                         <div class="col-md-4 footer-grid_section_w3layouts my-md-0 my-5">
                             <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3 editContent"
-                                style="outline: none; cursor: inherit;">Contact Info</h3>
+                                style="outline: none; cursor: inherit;">Ma'lumotlar</h3>
                             <div class="contact-info">
                                 <div class="footer-address-inf my-4">
                                     <h4 class="ad-info mb-2 editContent"
@@ -651,9 +648,9 @@
                                 </div>
                                 <div class="footer-address-inf">
                                     <h4 class="ad-info mb-2 editContent"
-                                        style="outline: none; cursor: inherit;">Location</h4>
+                                        style="outline: none; cursor: inherit;">Manzil</h4>
                                     <p class="editContent" style="outline: none; cursor: inherit;">
-                                        New York City</p>
+                                        Tashkent</p>
                                 </div>
                             </div>
                         </div>
@@ -669,8 +666,8 @@
     <div class="cpy-right py-3">
         <div class="container">
             <div class="row">
-                <p class="col-md-10 text-left">© 2019 DjangoMovie. All rights reserved | Design by
-                    <a href="https://djangochannel.com"> DJANGO SCHOOL.</a>
+                <p class="col-md-10 text-left">© 2022 Company. Barcha huquqlar himoyalangan
+<!--                    <a href="https://djangochannel.com"> DJANGO SCHOOL.</a>-->
                 </p>
                 <!-- move top icon -->
                 <a href="#home" class="move-top text-right col-md-2"><span

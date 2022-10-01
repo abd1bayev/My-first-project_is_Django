@@ -163,36 +163,35 @@
             </div>
             <!--  //contact form grid ends here -->
         </div>
+      {% for review in movie.reviews_set.all %}
         <div class="media py-5">
-            <img src="../../static//images/te2.jpg" class="mr-3 img-fluid" alt="image"
-                 style="outline: none; cursor: inherit;">
+            <img src="../../static//images/te2.jpg" class="mr-3 img-fluid" alt="image">
             <div class="media-body mt-4">
-                <h5 class="mt-0 editContent"
-                    style="outline: none; cursor: inherit;">Daniel Doe</h5>
-                <p class="mt-2 editContent" style="outline: none; cursor: inherit;">
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                    scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                    vulputate at, tempus viverra turpis.
+                <h5 class="mt-0 editContent">
+                    {{ review.name }}
+                </h5>
+                <p class="mt-2 editContent">
+                    {{ review.text }}
                 </p>
-                <div class="media mt-5 editContent"
-                     style="outline: none; cursor: inherit;">
-                    <a class="pr-3" href="#">
-                        <img src="../../static/images/te1.jpg" class="img-fluid "
-                             alt="image" style="outline: none; cursor: inherit;">
-                    </a>
-                    <div class="media-body">
-                        <h5 class="mt-0 editContent"
-                            style="outline: none; cursor: inherit;">Leia Organa</h5>
-                        <p class="mt-2 editContent"
-                           style="outline: none; cursor: inherit;"> Cras sit amet
-                            nibh libero, in gravida nulla. Nulla vel metus
-                            scelerisque ante sollicitudin. Cras purus odio,
-                            vestibulum in vulputate at, tempus viverra turpis. Fusce
-                            condimentum nunc ac nisi vulputate fringilla..</p>
-                    </div>
-                </div>
+<!--                <div class="media mt-5 editContent"-->
+<!--                     style="outline: none; cursor: inherit;">-->
+<!--                    <a class="pr-3" href="#">-->
+<!--                        <img src="../../static/images/te1.jpg" class="img-fluid " alt="image">-->
+<!--                    </a>-->
+<!--                    <div class="media-body">-->
+<!--                        <h5 class="mt-0 editContent"-->
+<!--                            style="outline: none; cursor: inherit;">Leia Organa</h5>-->
+<!--                        <p class="mt-2 editContent"-->
+<!--                           style="outline: none; cursor: inherit;"> Cras sit amet-->
+<!--                            nibh libero, in gravida nulla. Nulla vel metus-->
+<!--                            scelerisque ante sollicitudin. Cras purus odio,-->
+<!--                            vestibulum in vulputate at, tempus viverra turpis. Fusce-->
+<!--                            condimentum nunc ac nisi vulputate fringilla..</p>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock movie %}

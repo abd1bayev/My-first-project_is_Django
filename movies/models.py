@@ -41,7 +41,7 @@ class Genre(models.Model):
     """Janiri"""
     name = models.CharField("Ism", max_length=100)
     description = models.TextField("Tavsifi")
-    url = models.SlugField(max_length=100, unique=True)
+    url = models.SlugField(max_length=160, unique=True)
 
     def __str__(self):
         return self.name
